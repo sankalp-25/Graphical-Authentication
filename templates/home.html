@@ -6,16 +6,20 @@ Home Page
 
 
 {% block content %}
-<h1><br>Welcome {{ request.user.username }}</h1>
-<h1>Auth status: {{request.user.is_authenticated}}</h1>
+<style>
+    h1 {
+        font-size: 4rem;
+    }
+</style>
+<h1><br>Welcome to graphical password authentication{{ request.user.username }}</h1>
 <br>
-<br>
-<p>
-    Depending on the Auth status, you will be seeing login/logout button at the top right.
+<p><style>body{font-size: 1.7rem;}</style>
+    Depending on the Authentication status, you will be seeing login/logout button at the top right.
     <br>
-    <br>
-    Login: &nbsp&nbsp&nbspTo continue login
+    Login &nbsp : To continue login
     <br>
     Logout: To sign out of the application
 </p>
+<br>
+<h1>Authentication status: {{request.user.is_authenticated}}</h1>
 {% endblock %}
