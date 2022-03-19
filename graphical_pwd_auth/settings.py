@@ -127,7 +127,7 @@ STATICFILES_DIRS = (
 )
 
 # Password Grid NxN
-N = 3
+N = 6
 
 # Threshold block attempts
 TBA = 3
